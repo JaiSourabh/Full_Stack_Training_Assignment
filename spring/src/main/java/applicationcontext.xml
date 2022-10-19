@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean class="com.yash.spring.Employee" name="employee">
+		<property name="empId" value="y001"/>
+		<property name="empName" value="yash"/>
+			<property name="empRole" value="admin"/>
+
+	</bean>
+	<bean class="com.yash.spring.Employee" name="employee1" p:empId="119" p:empName="Raj" p:empRole="Admin"/>
+	
+	<bean class="com.yash.spring.PrintMessage" name="m1">
+		<property name="message" value="Yash"></property>
+	</bean>
+	
+	<bean class="com.yash.spring.ConstructorMessage" name="cm">
+		<constructor-arg name="message" value="null"></constructor-arg>
+	</bean>
+	
+	<bean class="com.yash.spring.SetterMesage" name="setterMsg">
+		<property name="message" value="Yash Setter"></property>
+	</bean>
+	
+	<bean class="com.yash.spring.Rectangle" name="shapeClass"></bean>
+
+</beans>
